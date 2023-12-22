@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Получение прогноза погоды</title>
+</head>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+    }
+
+    .block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(41, 28, 73);
+        color: white;
+        padding-left: 2%;
+        padding-right: 5%;
+    }
+
+    #inp-city {
+        border-radius: 5px;
+    }
+
+    #card {
+        margin: 3%;
+        background-color: rgb(229, 211, 255);
+        padding: 1%;
+        display: inline-block;
+        width: 250px;
+    }
+
+    #city {
+        font-size: 30px;
+    }
+
+    #img {
+        width: 100%;
+    }
+
+    #weather{
+        text-align:center;
+        font-size: 50px;
+        font-weight: bold;
+    }
+    #weather2{
+        text-align:center;
+    }
+</style>
+
+<body>
+
+    <div class="block">
+        <h2>Прогноз погоды</h2>
+        <div><input id="inp-city" type="text" placeholder="Odessa"></div>
+    </div>
+    <div id="card">
+        <div id=city> </div>
+        <img id="img" />
+        <div id="weather"></div>
+        <div id="weather2"></div>
+        <br>
+        <div id="humidity"></div>
+        <div id="temp-min"></div>
+        <div id="coord-lat"></div>
+        <div id="sunset"></div>
+        <div id="sunrise"></div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
